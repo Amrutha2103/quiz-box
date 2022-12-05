@@ -44,7 +44,10 @@ const option3 = document.querySelector('#option3');
 const option4 = document.querySelector('#option4');
 const next = document.querySelector('#next');
 
+const answers = document.querySelectorAll('.choice');
+
 let questionCount = 0;
+let score = 0;
 
 function loadQuestion() {
      
@@ -59,3 +62,29 @@ function loadQuestion() {
 }
 
 loadQuestion();
+
+function getCheckAnswer() {
+    let answer ;
+
+    answers.forEach((curAnsElem) => {
+        if(curAnsElem.checked) {
+            answer = curAnsElem.id;
+        }
+    });
+    return answer;
+};
+
+next.addEventListener('click', () => {
+    const checkedAnswer = getCheckAnswer();
+
+    if(checkedAnswer === quizData[questionCount].ans){
+        score++;
+
+    };
+
+    questionCount++;
+
+    if(questionCount < quizData.length){
+        loadQuestion();
+    }
+})
