@@ -33,3 +33,46 @@
     padding: 30px 80px;
     border-radius: 10px;
 }
+
+.inner-area h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 10px 0 40px 0;
+}
+
+.inner-area li {
+    font-size: 1.25rem;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+input {
+    cursor: pointer;
+}
+
+#next {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: rgb(4, 16, 38);
+    color: #fff;
+    margin-top: 40px;
+}
+
+#next:hover {
+    background-color:rgba(210, 105, 30, 0.521);
+}
+
+#score {
+    background-color:rgb(164, 174, 149);
+    margin-top: 30px;
+    padding: 30px 40px;
+}
+
+.score-area {
+    display: none;
+}
