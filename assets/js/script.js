@@ -44,8 +44,10 @@ const next = document.querySelector('#next');
 
 const answers = document.querySelectorAll('.choice');
 
+const score = document.querySelector('#score');
+
 let questionCount = 0;
-let score = 0;
+let scores = 0;
 
 function loadQuestion() {
 
@@ -73,11 +75,12 @@ function getCheckAnswer() {
 };
 
 next.addEventListener('click', () => {
-    if ((questionCount + 1) <= quizData.length) {
+   // if ((questionCount + 1) <= quizData.length) {
         const checkedAnswer = getCheckAnswer();
+        console.log(checkedAnswer);
 
         if (checkedAnswer === quizData[questionCount].ans) {
-            score++;
+            scores++;
 
         };
 
@@ -85,7 +88,16 @@ next.addEventListener('click', () => {
 
         if (questionCount < quizData.length) {
             loadQuestion();
-        }
-    }
+        }else {
+            score.innerHTML = `
+            <h3> You scored ${scores}/${quizData.length} </h3>
+            <button class="btn" onclick="location.reload()"> Reload </button>
+            `;
+            score.classList.remove('score-area');
 
-})
+        }
+    
+
+});
+
+
