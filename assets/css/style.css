@@ -73,6 +73,23 @@ input {
     padding: 30px 40px;
 }
 
+#score h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#score .btn {
+    margin-top: 20px;
+    background-color:rgb(6, 45, 109) ;
+    color: #fff;
+}
+
+#score .btn:hover {
+    margin-top: 20px;
+    background-color:rgb(87, 122, 178) ;
+    color: #fff;
+}
+
 .score-area {
     display: none;
 }
