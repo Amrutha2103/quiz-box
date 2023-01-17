@@ -74,6 +74,11 @@ function getCheckAnswer() {
     return answer;
 };
 
+function deselectAll() {
+    answers.forEach((curAnsElem) => curAnsElem.checked = false );
+
+}
+
 next.addEventListener('click', () => {
    // if ((questionCount + 1) <= quizData.length) {
         const checkedAnswer = getCheckAnswer();
@@ -85,6 +90,8 @@ next.addEventListener('click', () => {
         };
 
         questionCount++;
+
+        deselectAll();
 
         if (questionCount < quizData.length) {
             loadQuestion();

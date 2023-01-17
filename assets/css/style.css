@@ -61,6 +61,7 @@ input {
     background-color: rgb(4, 16, 38);
     color: #fff;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 #next:hover {
