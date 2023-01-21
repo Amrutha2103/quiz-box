@@ -35,24 +35,30 @@ const quizData = [{
     ans: "choice4"
 }];
 
+/**
+ * Declare constants for DOM elements 
+ * and possible choices
+ */
+
 const question = document.querySelector('.question');
 const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
 const option3 = document.querySelector('#option3');
 const option4 = document.querySelector('#option4');
 const next = document.querySelector('#next');
-
 const answers = document.querySelectorAll('.choice');
-
 const score = document.querySelector('#score');
 
 let questionCount = 0;
 let scores = 0;
 
+/**
+ * The main game function
+ */
+
 function loadQuestion() {
 
     const questionList = quizData[questionCount];
-
     question.innerText = questionList.question;
 
     option1.innerText = questionList.a;
@@ -64,6 +70,7 @@ function loadQuestion() {
 loadQuestion();
 
 function getCheckAnswer() {
+
     let answer;
 
     answers.forEach((curAnsElem) => {
@@ -74,37 +81,38 @@ function getCheckAnswer() {
     return answer;
 };
 
-function deselectAll() {
-    answers.forEach((curAnsElem) => curAnsElem.checked = false );
+/**
+ * The function to deselect the selected options
+ */
 
+function deselectAll() {
+
+    answers.forEach((curAnsElem) => curAnsElem.checked = false);
 }
 
+/**
+ * Add event listener
+ */
+
 next.addEventListener('click', () => {
-   // if ((questionCount + 1) <= quizData.length) {
-        const checkedAnswer = getCheckAnswer();
-        console.log(checkedAnswer);
+    const checkedAnswer = getCheckAnswer();
+    console.log(checkedAnswer);
 
-        if (checkedAnswer === quizData[questionCount].ans) {
-            scores++;
+    if (checkedAnswer === quizData[questionCount].ans) {
+        scores++;
+    };
 
-        };
+    questionCount++;
 
-        questionCount++;
+    deselectAll();
 
-        deselectAll();
-
-        if (questionCount < quizData.length) {
-            loadQuestion();
-        }else {
-            score.innerHTML = `
+    if (questionCount < quizData.length) {
+        loadQuestion();
+    } else {
+        score.innerHTML = `
             <h3> You scored ${scores}/${quizData.length} </h3>
             <button class="btn" onclick="location.reload()"> Reload </button>
             `;
-            score.classList.remove('score-area');
-
-        }
-    
-
+        score.classList.remove('score-area');
+    }
 });
-
-
