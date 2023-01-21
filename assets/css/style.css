@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
+/* Main view setup*/
 * {
     margin: 0;
     padding: 0;
@@ -15,17 +16,24 @@
     background-color: burlywood;
 }
 
+/* header */
+
 #heading {
     color:black;
     text-align: center;
     font-size: 2.5rem;
     padding-top: 20px;
+    background-color:rgb(158, 94, 126)
 }
+
+/* logo */
 
 #logo {
     height: 40px;
     padding-right: 5px;
 }
+
+/* game area */
 
 .inner-area {
     width: 90vw;
@@ -68,6 +76,8 @@ input {
     background-color:rgba(210, 105, 30, 0.521);
 }
 
+/* score area */
+
 #score {
     background-color:rgb(164, 174, 149);
     margin-top: 30px;
@@ -94,6 +104,8 @@ input {
 .score-area {
     display: none;
 }
+
+/* For small screen sizes 800px and down */
 
 @media (min-width: 800px) {
     .inner-area {
