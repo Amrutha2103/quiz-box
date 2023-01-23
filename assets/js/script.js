@@ -40,7 +40,7 @@ const quizData = [{
  * and possible choices
  */
 
-const question = document.querySelector('.question');
+const question = document.getElementById('question');
 const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
 const option3 = document.querySelector('#option3');
@@ -48,6 +48,7 @@ const option4 = document.querySelector('#option4');
 const next = document.querySelector('#next');
 const answers = document.querySelectorAll('.choice');
 const score = document.querySelector('#score');
+const choicesUl = document.getElementById('choices');
 
 let questionCount = 0;
 let scores = 0;
@@ -74,12 +75,19 @@ function getCheckAnswer() {
     let answer;
 
     answers.forEach((curAnsElem) => {
+        
         if (curAnsElem.checked) {
             answer = curAnsElem.id;
         }
     });
     return answer;
-};
+}
+
+answers.forEach((curAnsElem) => {
+    curAnsElem.addEventListener("click", function() {
+        next.classList.remove("hide");
+    });
+});
 
 /**
  * The function to deselect the selected options
@@ -95,6 +103,7 @@ function deselectAll() {
  */
 
 next.addEventListener('click', () => {
+    next.classList.add("hide");
     const checkedAnswer = getCheckAnswer();
     console.log(checkedAnswer);
 
@@ -109,6 +118,8 @@ next.addEventListener('click', () => {
     if (questionCount < quizData.length) {
         loadQuestion();
     } else {
+        question.classList.add("hide");
+        choicesUl.classList.add("hide");
         score.innerHTML = `
             <h3> You scored ${scores}/${quizData.length} </h3>
             <button class="btn" onclick="location.reload()"> Reload </button>
