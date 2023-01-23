@@ -59,6 +59,7 @@ input {
 }
 
 #next, .btn {
+    text-decoration: none;
     padding: 10px 30px;
     font-size: 20px;
     font-weight: bold;
