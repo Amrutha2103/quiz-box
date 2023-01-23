@@ -88,3 +88,19 @@ Interactive quizzes are content where a user answers questions and is then given
   * I have checked the accessibility by running it through the lighthouse in devtools.
 
 ![This is an accesssibility test image](documentation/readme-accessibility.jpg)
+
+### **Bugs**
+
+- When I tested my project, I noticed that the game area was not responsive.
+- I fixed the issues using media queries.
+
+![This is an error image](documentation/readme-testing.png) 
+
+## **Deployment**
+
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://amrutha2103.github.io/quiz-box/), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://amrutha2103.github.io/quiz-box/)
