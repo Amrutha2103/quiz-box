@@ -8,7 +8,7 @@ The quiz provides Multiple Choice Questions (MCQs) and you will have to read all
 
 Interactive quizzes are content where a user answers questions and is then given a specific result or score. The result is based on a calculation of the user's interactions and the answers they provided for each question.
 
-![This is an image](documentation/readme1.JPG)
+![This is an image](documentation/readme1.jpg)
 
 ## **Features**
 
@@ -19,7 +19,7 @@ Interactive quizzes are content where a user answers questions and is then given
     * Featured at the top of the page, the header shows the game name: Quiz Box in a font that clearly contrasts with the background.
     * The header is also provided with a logo next to the game name.
 
-![This is header image](documentation/readme2.JPG)
+![This is header image](documentation/readme2.jpg)
 
 - The Game Area
 
@@ -27,7 +27,7 @@ Interactive quizzes are content where a user answers questions and is then given
     * You will have to read all the given answers and click over the correct answer.
     * You can use "Next" button to go to next questions in the quiz.
     
-![This is game area image](documentation/readme3.JPG)
+![This is game area image](documentation/readme3.jpg)
 
 - The Score Area
 
@@ -36,7 +36,7 @@ Interactive quizzes are content where a user answers questions and is then given
     * The result is based on a calculation of the user's interactions and the answers they provided for each question.
     * This section provides a "Reload" button that the user can click to reload the quiz and play the game.
 
-![This is score area image](documentation/readme4.JPG)
+![This is score area image](documentation/readme4.jpg)
 
 ### **Features to implement**
 
@@ -53,3 +53,38 @@ Interactive quizzes are content where a user answers questions and is then given
 
 - I tested the website on different browsers like Chrome, Edge and Firefox.
 
+![This is Chrome image](documentation/readme-chrome.jpg)
+
+![This is Edge image](documentation/readme-edge.jpg)
+
+![This is Firefox image](documentation/readme-firefox.jpg)
+
+### **Responsiveness**
+
+- I confirmed that the project is responsive and looks good on all standard screen sizes using the devtools device toolbar.
+
+![This is a mobile image](documentation/readme-mobile.jpg)
+
+![This is a tab image](documentation/readme-tab.jpg)
+
+### **Validator Testing** 
+
+- HTML
+  * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Famrutha2103.github.io%2Fquiz-box%2F).
+
+  ![This is a html validator image](documentation/readme-html.jpg) 
+
+- CSS
+  * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famrutha2103.github.io%2Fquiz-box%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+![This is a css validator image](documentation/readme-css.jpg) 
+
+- JavaScript
+  * No errors were found when passing through the official [JSHint JavaScript Validator](https://jshint.com/)
+
+  ![This is a javascript validator image](documentation/readme-js.jpg) 
+
+- Accessibility
+  * I have checked the accessibility by running it through the lighthouse in devtools.
+
+![This is an accesssibility test image](documentation/readme-accessibility.jpg)
