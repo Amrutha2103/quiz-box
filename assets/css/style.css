@@ -56,6 +56,7 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
+    margin: 20px;
 }
 
 .inner-area h2 {
@@ -86,10 +87,11 @@ input {
     background-color: rgb(4, 16, 38);
     color: #fff;
     margin-top: 40px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
-#next:hover {
+#next, .btn:hover {
     background-color:rgba(210, 105, 30, 0.521);
 }
 
@@ -110,6 +112,7 @@ input {
     margin-top: 20px;
     background-color:rgb(6, 45, 109) ;
     color: #fff;
+    display: block;
 }
 
 #score .btn:hover {
