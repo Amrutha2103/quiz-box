@@ -101,9 +101,11 @@ Interactive quizzes are content where a user answers questions and is then given
 ### **Bugs**
 
 - When I tested my project, I noticed that the game area was not responsive.
-- I fixed the issues using media queries.
+  - I fixed the issues using media queries.
 
 ![This is an error image](documentation/readme-testing.png) 
+
+  - I removed the unused variable.
 
 ## **Deployment**
 
