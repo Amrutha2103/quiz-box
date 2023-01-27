@@ -17,17 +17,19 @@ const choicesUl = document.getElementById('choices');
 
 let questionCount = 0;
 let scores = 0;
+let randomize;
 
 /**
  * The main game function
  */
+randomizeQuestions();
+function randomizeQuestions() {
+    randomize = quizData.sort(() => Math.random() - .5);
+}
 
 function loadQuestion() {
-
-    let randomize = quizData.sort(() => Math.random() - .5);
     const questionList = randomize[questionCount];
     question.innerText = questionList.question;
-
     option1.innerText = questionList.a;
     option2.innerText = questionList.b;
     option3.innerText = questionList.c;
