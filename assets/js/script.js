@@ -23,8 +23,9 @@ let randomize;
  * The main game function
  */
 randomizeQuestions();
+
 function randomizeQuestions() {
-    randomize = quizData.sort(() => Math.random() - .5);
+    randomize = quizData.sort(() => Math.random() - 0.5);
 }
 
 function loadQuestion() {
@@ -73,11 +74,11 @@ function deselectAll() {
 next.addEventListener('click', () => {
     next.classList.add("hide");
     const checkedAnswer = getCheckAnswer();
-    console.log(checkedAnswer);
+    
 
     if (checkedAnswer === quizData[questionCount].ans) {
         scores++;
-    };
+    }
 
     questionCount++;
 
@@ -91,13 +92,12 @@ next.addEventListener('click', () => {
 });
 
 function endGame() {
+    clearInterval(timerinterval);
     question.classList.add("hide");
-        choicesUl.classList.add("hide");
-        score.innerHTML = `
-            <h3> You scored ${scores}/${quizData.length} </h3>
-            <button class="btn" onclick="location.reload()"> Reload </button>
-            `;
-        score.classList.remove('score-area');
+    choicesUl.classList.add("hide");
+    next.classList.add("hide");
+    score.innerHTML = `<h3> You scored ${scores}/${quizData.length} </h3>`;
+    score.classList.remove('score-area');
 }
 
 // Add timer to the questions
