@@ -21,11 +21,20 @@ Interactive quizzes are content where a user answers questions and is then given
 
 ![This is header image](documentation/readme2.jpg)
 
+- Home Page
+
+    * The Home Page displays the rules to participate in the quiz.
+    * The page also has a "Play" button to start the quiz.
+
+![This is home page image](documentation/readme-home.jpg)
+
 - The Game Area
 
     * The game area provides multiple choice questions.
     * You will have to read all the given answers and click over the correct answer.
+    * You cannot proceed to the next question before selection.
     * You can use "Next" button to go to next questions in the quiz.
+    * You can click the "Home" and "Restart" button to go back to the Home page and restart the quiz after you start the game. 
     
 ![This is game area image](documentation/readme3.jpg)
 
@@ -40,7 +49,7 @@ Interactive quizzes are content where a user answers questions and is then given
 
 ### **Features to implement**
 
-- When there is time, I would like to expand this quiz game to include timer within which the quiz has to be completed.
+- When there is time, I would like to expand this quiz game to include the user's name.
 - I would also include an option to go back to the previous questions to edit the answer if the user wishes.
 
 ## **Testing**
