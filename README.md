@@ -83,7 +83,7 @@ Interactive quizzes are content where a user answers questions and is then given
 
   ![This is a html validator image](documentation/readme-index.jpg) 
 
-  ![This is a html validator image](documentation/readme-index.jpg) 
+  ![This is a html validator image](documentation/readme-quiz.jpg) 
 
 - CSS
   * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famrutha2103.github.io%2Fquiz-box%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).

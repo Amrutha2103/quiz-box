@@ -74,7 +74,7 @@ function deselectAll() {
 next.addEventListener('click', () => {
     next.classList.add("hide");
     const checkedAnswer = getCheckAnswer();
-    
+
 
     if (checkedAnswer === quizData[questionCount].ans) {
         scores++;

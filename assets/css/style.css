@@ -19,11 +19,11 @@
 /* header */
 
 #heading {
-    color:black;
+    color: black;
     text-align: center;
     font-size: 2.5rem;
     padding-top: 20px;
-    background-color:rgba(72, 79, 83, 0.766)
+    background-color: rgba(72, 79, 83, 0.766)
 }
 
 /* logo */
@@ -36,7 +36,7 @@
 /* Home */
 
 .rules {
-    padding-top: 50px ;
+    padding-top: 50px;
 }
 
 .rules h2 {
@@ -94,7 +94,8 @@ input {
     cursor: pointer;
 }
 
-#next, .btn {
+#next,
+.btn {
     text-decoration: none;
     padding: 10px 30px;
     font-size: 20px;
@@ -109,14 +110,15 @@ input {
     cursor: pointer;
 }
 
-#next, .btn:hover {
-    background-color:rgba(35, 41, 47, 0.521);
+#next,
+.btn:hover {
+    background-color: rgba(35, 41, 47, 0.521);
 }
 
 /* score area */
 
 #score {
-    
+
     margin-top: 30px;
     padding: 30px 40px;
 }
@@ -128,14 +130,14 @@ input {
 
 #score .btn {
     margin-top: 20px;
-    background-color:rgb(6, 45, 109) ;
+    background-color: rgb(6, 45, 109);
     color: #fff;
     display: block;
 }
 
 #score .btn:hover {
     margin-top: 20px;
-    background-color:rgb(87, 122, 178) ;
+    background-color: rgb(87, 122, 178);
     color: #fff;
 }
 
