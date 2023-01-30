@@ -102,7 +102,7 @@ function endGame() {
 
 // Add timer to the questions
 
-const startingMinutes = 1;
+const startingMinutes = 5;
 let time = startingMinutes * 60;
 
 const countdownEl = document.getElementById('countdown');
@@ -116,7 +116,7 @@ function updateCountdown() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     if (minutes <= 0 && seconds <= 0) {
         clearInterval(timerinterval);
-        countdownEl.innerHTML = `time up`;
+        countdownEl.innerHTML = `Time up`;
         endGame();
     } else {
         countdownEl.innerHTML = `${minutes}:${seconds}`;
