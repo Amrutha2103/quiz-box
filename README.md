@@ -72,7 +72,7 @@ Interactive quizzes are content where a user answers questions and is then given
 
 - I confirmed that the project is responsive and looks good on all standard screen sizes using the devtools device toolbar.
 
-![This is a mobile image](documentation/readme-mobile.jpg)
+![This is a mobile image](documentation/readme-mob.jpg)
 
 ![This is a tab image](documentation/readme-tab.jpg)
 
@@ -81,7 +81,9 @@ Interactive quizzes are content where a user answers questions and is then given
 - HTML
   * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Famrutha2103.github.io%2Fquiz-box%2F).
 
-  ![This is a html validator image](documentation/readme-html.jpg) 
+  ![This is a html validator image](documentation/readme-index.jpg) 
+
+  ![This is a html validator image](documentation/readme-index.jpg) 
 
 - CSS
   * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famrutha2103.github.io%2Fquiz-box%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
