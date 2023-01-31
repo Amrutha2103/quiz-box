@@ -107,13 +107,37 @@ Interactive quizzes are content where a user answers questions and is then given
 
 ![This is an error image](documentation/readme-testing.png) 
 
-  - I removed the unused variable.
+  - I removed the unused variable and fixed the issue.
 
 ## **Deployment**
 
 The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the [GitHub repository](https://amrutha2103.github.io/quiz-box/), navigate to the Settings tab 
+  - In the [GitHub repository](https://github.com/Amrutha2103/quiz-box), navigate to the Settings tab 
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found [here](https://amrutha2103.github.io/quiz-box/)
+
+### Local Deployment
+
+In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
+
+- `git clone https://github.com/Amrutha2103/quiz-box.git`
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Amrutha2103/quiz-box)
+
+## **Credits**
+
+
+### **Content**
+
+- The code to implement the timer was taken from [educative](https://www.educative.io/answers/how-to-create-a-countdown-timer-using-javascript)
+- 
+
+
+### **Media**
+
+- The quiz logo image was taken from this site [Adobe stock](https://stock.adobe.com/search?k=quiz+logo)
+
