@@ -91,6 +91,10 @@ next.addEventListener('click', () => {
     }
 });
 
+/**
+ * The function to end the game and display the score
+ */
+
 function endGame() {
     clearInterval(timerinterval);
     question.classList.add("hide");
