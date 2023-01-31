@@ -47,6 +47,13 @@ Interactive quizzes are content where a user answers questions and is then given
 
 ![This is score area image](documentation/readme4.jpg)
 
+- The Timer
+
+    * A timer is displayed at the top which is the time remaining to complete the quiz.
+    * The timer in this project is set to 5 minutes.
+
+![This is timer image](documentation/readme-timer.jpg)
+
 ### **Features to implement**
 
 - When there is time, I would like to expand this quiz game to include the user's name.
@@ -134,7 +141,6 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 ### **Content**
 
 - The code to implement the timer was taken from [educative](https://www.educative.io/answers/how-to-create-a-countdown-timer-using-javascript)
-- 
 
 
 ### **Media**
